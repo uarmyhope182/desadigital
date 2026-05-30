@@ -1,0 +1,22 @@
+{
+  "name": "desa_sasi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:dev": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/output.css --watch",
+    "css:build": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}

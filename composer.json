@@ -1,0 +1,29 @@
+{
+    "name": "desa-sasi/sistem-informasi-kelurahan",
+    "description": "Sistem Informasi dan Manajemen Permohonan Surat Kelurahan Sasi",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "dompdf/dompdf": "^2.0",
+        "twbs/bootstrap": "^5.3",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "config/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@link-bootstrap"
+        ],
+        "post-update-cmd": [
+            "@link-bootstrap"
+        ],
+        "link-bootstrap": "ln -s vendor/twbs/bootstrap/dist assets/bootstrap"
+    }
+}
